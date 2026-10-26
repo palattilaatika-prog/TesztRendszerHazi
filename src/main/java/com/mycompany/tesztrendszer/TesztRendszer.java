@@ -11,6 +11,7 @@ package com.mycompany.tesztrendszer;
 public class TesztRendszer {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        TesztFuttato futtato = new TesztFuttato();
+        futtato.futtat(PeldaTeszt.class);
     }
 }
