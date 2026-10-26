@@ -9,5 +9,21 @@ package com.mycompany.tesztrendszer;
  * @author Denes
  */
 public class PeldaOsztaly {
-    
+    public int osszead(int a, int b) {
+        return a + b;
+    }
+
+    public int osztas(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException(
+                "Nullával nem lehet osztani."
+            );
+        }
+
+        return a / b;
+    }
+
+    public boolean pozitiv(int szam) {
+        return szam > 0;
+    }
 }
